@@ -25,8 +25,12 @@
 	</properties>
 	
 	<dependencies>
-		<!-- spring-boot WEB支持-->
+		<!-- spring-boot WEB支持
+		-->
 		<dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-web</artifactId></dependency>
+		<!-- spring-boot thymeleaf 
+		<dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-thymeleaf</artifactId></dependency>
+		-->
 		<!-- spring-boot cxf -->
 		<dependency><groupId>org.apache.cxf</groupId><artifactId>cxf-spring-boot-starter-jaxws</artifactId><version>${cxf.version}</version></dependency>
 		<!-- spring-boot 热部署 -->
