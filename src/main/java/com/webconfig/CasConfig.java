@@ -18,8 +18,8 @@ import chok.cas.client.filter.CasAccessFilter;
 import chok.cas.client.filter.CasLogoutFilter;
 import chok.cas.client.filter.CasPasswordFilter;
 
-@Configuration
-@PropertySource(value = "classpath:config/cas.properties", ignoreResourceNotFound = true)
+//@Configuration
+//@PropertySource(value = "classpath:config/cas.properties", ignoreResourceNotFound = true)
 public class CasConfig
 {
 	@Value("${httpServletRequestWrapperFilter_urlPatterns}")
