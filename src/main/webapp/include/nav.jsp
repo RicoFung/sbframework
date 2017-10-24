@@ -7,11 +7,11 @@ AuthUser o = (AuthUser)session.getAttribute(LoginFilter.LOGINER);
 String appId = o==null?"":o.getString("appId");
 String userId = o==null?"":o.getString("id");
 String account = o==null?"":o.getString("tc_code");
-String menuJson = o==null?"":o.getString("sso.menuJson");
-String btnJson = o==null?"":o.getString("sso.btnJson");
-request.setAttribute("SsoLoginUser", o);
+String menuJson = o==null?"":o.getString("menuJson");
+String btnJson = o==null?"":o.getString("btnJson");
+request.setAttribute("LoginUser", o);
 %>
- --%>
+--%>
 <%@ page import="chok.cas.client.CasLoginUser" %>
 <%@ page import="chok.cas.client.filter.CasAccessFilter" %>
 <%
@@ -21,7 +21,7 @@ String userId = o==null?"":o.getString("id");
 String account = o==null?"":o.getString("tc_code");
 String menuJson = o==null?"":o.getString("menuJson");
 String btnJson = o==null?"":o.getString("btnJson");
-request.setAttribute("CasLoginUser", o);
+request.setAttribute("LoginUser", o);
 %>
 <script type="text/javascript">
 /* js 全局变量 **********************************************************/
