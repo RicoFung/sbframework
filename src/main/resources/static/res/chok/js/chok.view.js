@@ -44,7 +44,7 @@ $chok.view.fn.selectSidebarMenu = function(menuId,menuPermitId,menuName){
 $chok.view.fn.getGlobalHeight = function(type) {
 	if (type=='table') {
 		var minH = 300;
-		var newH = $(window).height() - 250;
+		var newH = $(window).height() - 400;
 	   	return newH<minH?minH:newH;
 	}
 	else if (type=='tree') {
