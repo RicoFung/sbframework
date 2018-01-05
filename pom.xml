@@ -8,6 +8,21 @@
 	<packaging>war</packaging>
 	<!--以下是給工具看的,主要是本Project的資訊-->
 	<name>sbframework</name>
+	<!-- 指定JDK -->
+	<profiles>
+		<profile>     
+		    <id>jdk-1.8</id>     
+		    <activation>     
+		        <activeByDefault>true</activeByDefault>     
+		        <jdk>1.8</jdk>     
+		    </activation>     
+		    <properties>     
+		        <maven.compiler.source>1.8</maven.compiler.source>     
+		        <maven.compiler.target>1.8</maven.compiler.target>     
+		        <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>     
+		    </properties>     			
+	    </profile>
+	</profiles>
     
 	<parent>
 		<groupId>org.springframework.boot</groupId>
