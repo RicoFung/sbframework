@@ -1,4 +1,4 @@
-package chok.sso.filter;
+package chok.sso.client.filter;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package chok.sso.filter;
+package chok.sso.client.filter;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -22,7 +22,7 @@ import org.slf4j.LoggerFactory;
 import com.alibaba.fastjson.JSON;
 
 import chok.devwork.Result;
-import chok.sso.AuthUser;
+import chok.sso.client.AuthUser;
 import chok.util.http.HttpAction;
 import chok.util.http.HttpResult;
 import chok.util.http.HttpUtil;

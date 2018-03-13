@@ -1,4 +1,4 @@
-package chok.sso;
+package chok.sso.client;
 
 import chok.devwork.BaseModel;
 
