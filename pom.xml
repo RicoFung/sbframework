@@ -66,7 +66,7 @@
 		<!-- spring-boot atomikos 分布式事务 -->
 		<dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-jta-atomikos</artifactId></dependency>
 	    <dependency><groupId>com.atomikos</groupId><artifactId>transactions-osgi</artifactId><version>3.9.3</version></dependency>
-        <!-- Spring Boot Reids -->
+        <!-- Spring Boot Redis -->
         <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-redis</artifactId><version>${redis.spring.boot.version}</version></dependency>
 		<!-- db driver myql-->
 		<dependency><groupId>mysql</groupId><artifactId>mysql-connector-java</artifactId></dependency>
