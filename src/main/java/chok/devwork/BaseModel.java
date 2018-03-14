@@ -1,9 +1,15 @@
 package chok.devwork;
 
+import java.io.Serializable;
 import java.util.HashMap;
 
-public abstract class BaseModel 
+public abstract class BaseModel implements Serializable
 {
+	/**
+	 * Serializable
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	Long id; // 用于insert、update、delete操作后返回主键ID
 	public Long getId() {
 		return id;
