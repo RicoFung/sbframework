@@ -12,6 +12,12 @@ public class PropertiesUtil
 		return getValue("", key);
 	}
 	
+	/**
+	 * 获取properties值
+	 * @param dir 目录路径，如：config/
+	 * @param key 键值
+	 * @return
+	 */
 	public static String getValue(String dir, String key)
 	{
 		if (prop == null)
