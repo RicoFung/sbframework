@@ -8,10 +8,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
-import chok.sso.filter.AccessFilter;
-import chok.sso.filter.LoginFilter;
-import chok.sso.filter.LogoutFilter;
-import chok.sso.filter.PasswordFilter;
+import chok.sso.client.filter.AccessFilter;
+import chok.sso.client.filter.LoginFilter;
+import chok.sso.client.filter.LogoutFilter;
+import chok.sso.client.filter.PasswordFilter;
 
 //@Configuration
 //@PropertySource(value = "classpath:config/sso.properties", ignoreResourceNotFound = true)
