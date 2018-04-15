@@ -38,8 +38,8 @@ request.setAttribute("LoginUser", o);
 %>
  --%>
 <%-- SSO
-<%@ page import="chok.sso.AuthUser"%>
-<%@ page import="chok.sso.filter.LoginFilter"%>
+<%@ page import="chok.sso.client.AuthUser"%>
+<%@ page import="chok.sso.client.filter.LoginFilter"%>
 <%
 AuthUser o = (AuthUser)session.getAttribute(LoginFilter.LOGINER);
 String appId = o==null?"":o.getString("appId");
