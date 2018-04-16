@@ -33,8 +33,8 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter
         * 用外部的tomcat也有效;所以用到外部的tomcat时不需在tomcat/config下的相应文件配置虚拟路径了,阿里云linux也没问题)
         */
         registry
-        .addResourceHandler(PropertiesUtil.getValue("static.path"))
-        .addResourceLocations("file:"+PropertiesUtil.getValue("static.doBase"));
+        .addResourceHandler(PropertiesUtil.getValue("config/", "static.path"))
+        .addResourceLocations("file:"+PropertiesUtil.getValue("config/", "static.doBase"));
         super.addResourceHandlers(registry);
     }
 
